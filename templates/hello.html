@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<table>
+  <th><td>Type</td><td>Name</td></th>
+  {% for thing in things %}
+  <tr><td>{{ thing["type"] }}</td><td>{{ thing["name"] }}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}
